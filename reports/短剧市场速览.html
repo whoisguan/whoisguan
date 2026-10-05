@@ -1,0 +1,213 @@
+<title>全球短剧市场速览</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+/* Layout: single reading column, section per research question, tables scroll inside their own box */
+:root{
+  --bg:#f7f6f3; --surface:#ffffff; --fg:#1d1b22; --muted:#6b6774; --line:#e2dfe6;
+  --accent:#c2185b; --accent-soft:#f6dfe8; --cn:#c2185b; --na:#3b5bab; --ai:#7a6a2e;
+  --display:"Noto Serif SC","Songti SC",serif; --body:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#16141a; --surface:#1f1c24; --fg:#ece9f1; --muted:#a29dab; --line:#34303b;
+  --accent:#f06292; --accent-soft:#3a2230; --cn:#f06292; --na:#8aa4e8; --ai:#d6c27a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#16141a; --surface:#1f1c24; --fg:#ece9f1; --muted:#a29dab; --line:#34303b;
+  --accent:#f06292; --accent-soft:#3a2230; --cn:#f06292; --na:#8aa4e8; --ai:#d6c27a; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.7}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:40px 64px}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(28px,6vw,42px);line-height:1.2;margin:0 0 12px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:22px;margin:0 0 12px;text-wrap:balance}
+.lede{color:var(--muted);max-width:65ch;margin:0}
+.note{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-top:16px}
+section{padding-block:28px;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+.q{font-size:12px;letter-spacing:.08em;color:var(--accent);font-weight:700;margin-bottom:4px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:24px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+.kpi b{display:block;font-family:var(--display);font-size:26px;font-variant-numeric:tabular-nums;color:var(--accent)}
+.kpi span{font-size:13px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.cols>div{min-width:0}
+.tag{display:inline-block;font-size:13px;padding:2px 10px;border-radius:999px;margin:3px 4px 3px 0;border:1px solid var(--line);background:var(--surface)}
+.tag.up{border-color:var(--accent);color:var(--accent)}
+.tag.down{color:var(--muted);text-decoration:line-through}
+h3{font-size:15px;margin:0 0 6px}
+h3.cn{color:var(--cn)} h3.na{color:var(--na)}
+ul{padding-left:1.2em;margin:6px 0} li{margin:3px 0}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.05em;color:var(--muted);font-weight:700}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.chart{display:grid;gap:8px;margin-top:8px}
+.bar{display:grid;grid-template-columns:7.5em 1fr;align-items:center;gap:10px;font-size:13px}
+.bar .track{position:relative;height:22px}
+.bar .fill{height:100%;background:var(--accent);border-radius:3px;min-width:2px}
+.bar .fill.alt{background:var(--accent-soft);border:1px dashed var(--accent)}
+.bar .v{position:absolute;top:0;line-height:22px;padding-left:6px;font-variant-numeric:tabular-nums;color:var(--fg);white-space:nowrap}
+.cap{font-size:12px;color:var(--muted);margin-top:8px}
+.vs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.vs>div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;min-width:0}
+footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:8px}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>短剧靠“爽感”征服全球，增长进入下半场</h1>
+  <p class="lede">中国短剧规模已连续两年超过电影票房；海外收入约一半来自美国，九成以上归中资平台。增长重心正从“赚钱”转向“抢用户”，AI 剧占据了新片供给，但还没赢得观众。</p>
+  <div class="kpis">
+    <div class="kpi"><b>678–1,000亿+</b><span>中国 2025 市场规模（元，口径不同）</span></div>
+    <div class="kpi"><b>6.6–8亿</b><span>中国短剧用户</span></div>
+    <div class="kpi"><b>~30亿美元</b><span>海外 2025 应用内购收入</span></div>
+    <div class="kpi"><b>~50%</b><span>美国占海外收入比例</span></div>
+  </div>
+  <p class="note">数据整理自搜索结果摘要，原始页面未能逐一核对；不同机构口径差异大，正式引用前请核对原文。</p>
+</header>
+
+<section>
+  <div class="q">问题 1</div>
+  <h2>北美与中国的主题</h2>
+  <div class="cols">
+    <div>
+      <h3 class="na">北美：女性向浪漫 + 愿望满足</h3>
+      <span class="tag">隐藏身份亿万富翁 CEO</span><span class="tag">狼人 Alpha / Luna</span><span class="tag">吸血鬼</span><span class="tag">黑帮</span><span class="tag">重生复仇</span><span class="tag">怀孕 + 契约婚姻</span>
+      <p>套路直接来自 GoodNovel、Dreame 等英文网文平台。浪漫题材占女性观看的 76%、男性观看的 54%；惊悚、奇幻在增长。</p>
+    </div>
+    <div>
+      <h3 class="cn">中国：从霸总战神转向逆袭与银发</h3>
+      <span class="tag down">霸总</span><span class="tag down">战神</span><span class="tag down">赘婿</span>
+      <span class="tag up">逆袭</span><span class="tag up">打脸虐渣</span><span class="tag up">女性成长</span><span class="tag up">年代 / 家庭</span><span class="tag up">银发</span><span class="tag up">萌宝</span><span class="tag up">AI 修仙玄幻</span>
+      <p>2025 年热度第一是“逆袭”（5,178 部，热度 143.9 亿）。监管点名霸总、中老年题材后，内容向现实、正能量调整。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="q">问题 2 · 3</div>
+  <h2>为什么好看，观众在意什么</h2>
+  <div class="cols">
+    <div>
+      <h3>吸引力来源</h3>
+      <ul>
+        <li><b>情绪公式</b>：3 秒钩子、15 秒内起冲突、每 2–3 集一个反转、每集结尾留悬念</li>
+        <li><b>碎片时间</b>：1–2 分钟一集，竖屏单手看</li>
+        <li><b>代入与补偿</b>：被欺负→逆袭→打脸，低认知负担</li>
+        <li><b>商业设计</b>：付费卡点在第 8–12、26–30 集；中国转向免费看广告，免费剧占 66.3%</li>
+        <li>中国人均每天 <b>129 分钟</b>，超过长视频</li>
+      </ul>
+    </div>
+    <div>
+      <h3>观众在意 / 反感</h3>
+      <ul>
+        <li>观看动因：放松 46%、剧情吸引 43%、方便 39%（艾媒）</li>
+        <li>最想要：更多独家高质量内容 59.6%（视听协会）</li>
+        <li>满意度最低：<b>制作质量 7.12 分</b></li>
+        <li>弃剧原因：剧情无聊、制作差、演员、广告太多</li>
+        <li>投诉：自动续费、自动解锁、不显示总价——2025 年黑猫投诉 8,700+ 条</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="q">问题 4</div>
+  <h2>不同地区喜欢什么</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>地区</th><th>内容偏好</th><th>主要平台</th><th>角色</th></tr></thead>
+    <tbody>
+      <tr><td>美国 / 加拿大</td><td>浪漫、狼人、霸总、复仇；偏好本土实拍</td><td>ReelShort、DramaBox、My Drama</td><td>收入第一</td></tr>
+      <tr><td>日本</td><td>本土实拍、漫画式“等免费”付费</td><td>BUMP、中资 App（约九成收入）</td><td>收入第二</td></tr>
+      <tr><td>英国 / 欧洲</td><td>以英语浪漫剧为主，渗透率仅约 4%</td><td>中资 App</td><td>英国收入第三，潜力大</td></tr>
+      <tr><td>东南亚</td><td>家庭伦理、译制中国剧，免费为主</td><td>Melolo（字节）、Viu Shorts</td><td>下载大户</td></tr>
+      <tr><td>印度</td><td>本土语言、家庭与情感剧</td><td>Kuku TV（本土）</td><td>唯一本土平台胜出的大市场</td></tr>
+      <tr><td>拉美</td><td>电视剧（telenovela）风格本地化</td><td>DramaBox、ReelShort × Endemol</td><td>增长最快，下载 +402%</td></tr>
+      <tr><td>韩国</td><td>网漫改编，本土接受慢</td><td>Vigloo、Tving、Kakao</td><td>以出海为主</td></tr>
+      <tr><td>中东</td><td>保守内容、阿语原创</td><td>BlingWood、Scene</td><td>起步期，土耳其供片</td></tr>
+    </tbody>
+  </table></div>
+  <p class="cap">译制剧占海外片量 50% 以上，但只拿到约 40% 热度；高价值市场更认本土实拍。</p>
+</section>
+
+<section>
+  <div class="q">问题 5</div>
+  <h2>各国平台与效果</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>平台</th><th>背景</th><th>主要市场</th><th>效果</th></tr></thead>
+    <tbody>
+      <tr><td>红果短剧</td><td>字节跳动</td><td>中国</td><td class="num">日活 1.68 亿，超过爱优腾芒之和</td></tr>
+      <tr><td>抖音 / 快手</td><td>短视频平台</td><td>中国</td><td class="num">快手短剧日活 3 亿+</td></tr>
+      <tr><td>微信小程序</td><td>腾讯</td><td>中国</td><td class="num">月活 4.27 亿，31% 为 51 岁以上</td></tr>
+      <tr><td>ReelShort</td><td>Crazy Maple（中文在线）</td><td>美国等</td><td class="num">2025 收入 ~7.85 亿美元，海外份额 29%</td></tr>
+      <tr><td>DramaBox</td><td>点众</td><td>美国、全球</td><td class="num">海外份额 21%</td></tr>
+      <tr><td>DramaWave / NetShort / GoodShort</td><td>中资</td><td>全球</td><td class="num">13% / 10% / 6%</td></tr>
+      <tr><td>My Drama</td><td>Holywater（Fox 入股）</td><td>美国</td><td class="num">付费转化 23.9%，估值约 2–2.5 亿美元</td></tr>
+      <tr><td>PineDrama</td><td>TikTok</td><td>美国、巴西</td><td class="num">2026 年 1 月上线</td></tr>
+      <tr><td>Kuku TV</td><td>印度本土</td><td>印度</td><td class="num">2025 下载 1.34 亿</td></tr>
+      <tr><td>BUMP</td><td>日本 emole</td><td>日本</td><td class="num">下载 400 万</td></tr>
+    </tbody>
+  </table></div>
+  <p class="cap">海外份额为 Media Partners Asia 估算；海外收入约 93–95% 归中资平台。</p>
+</section>
+
+<section>
+  <div class="q">问题 6</div>
+  <h2>AI 短剧 vs 真人短剧</h2>
+  <div class="vs">
+    <div>
+      <h3 style="color:var(--ai)">AI 短剧</h3>
+      <ul>
+        <li>中国新片供给 <b>90%+</b></li>
+        <li>红果总榜前 20 最多占 9 部</li>
+        <li>成本约为真人的 10–20%，周期 1 个月</li>
+        <li>只有约 <b>1.3%</b> 回本，流量集中在头部</li>
+        <li>多数观众反感“AI 脸”（调查质量一般）</li>
+        <li>强项：修仙、玄幻、神话、战神</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="cn">真人短剧</h3>
+      <ul>
+        <li>仍主导情感、浪漫、现实题材</li>
+        <li>单部约 10–50 万元，精品约 150 万元</li>
+        <li>平台加码：红果真人预算 +40%</li>
+        <li>抖音下调 AI 分成系数（60→40）</li>
+        <li>监管机构呼吁扶持真人剧</li>
+        <li>美国：AI 与真人付费转化几乎相同（23.6% vs 23.9%，平台自报）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="q">问题 7</div>
+  <h2>增长势头</h2>
+  <h3>中国短剧市场规模（亿元）</h3>
+  <div class="chart" role="img" aria-label="中国短剧市场规模柱状图">
+    <div class="bar"><span>2021</span><div class="track"><div class="fill" style="width:3.07%"></div><span class="v" style="left:3.07%">36.8</span></div></div>
+    <div class="bar"><span>2022</span><div class="track"><div class="fill" style="width:8.48%"></div><span class="v" style="left:8.48%">101.7</span></div></div>
+    <div class="bar"><span>2023</span><div class="track"><div class="fill" style="width:31.16%"></div><span class="v" style="left:31.16%">373.9</span></div></div>
+    <div class="bar"><span>2024</span><div class="track"><div class="fill" style="width:42.08%"></div><span class="v" style="left:42.08%">505</span></div></div>
+    <div class="bar"><span>2025 艾媒</span><div class="track"><div class="fill" style="width:56.49%"></div><span class="v" style="left:56.49%">677.9</span></div></div>
+    <div class="bar"><span>2025 协会</span><div class="track"><div class="fill alt" style="width:83.33%"></div><span class="v" style="left:83.33%">1,000+</span></div></div>
+    <div class="bar"><span>2026 预测</span><div class="track"><div class="fill alt" style="width:100%;max-width:calc(100% - 4.5em)"></div><span class="v" style="right:0">~1,200</span></div></div>
+  </div>
+  <p class="cap">虚线为中国网络视听协会宽口径（含漫剧、AI 剧），与艾媒的真人剧口径不可直接比较。</p>
+
+  <div class="tbl" style="margin-top:16px"><table>
+    <thead><tr><th>市场</th><th>势头</th><th>关键数据</th></tr></thead>
+    <tbody>
+      <tr><td>中国</td><td>放缓但仍增长</td><td>2026 预计 ~1,200 亿元，约 +20%</td></tr>
+      <tr><td>海外整体</td><td>收入放缓，下载仍快</td><td>2026 Q1 收入 +20%，下载 +140%</td></tr>
+      <tr><td>美国</td><td>稳步增长</td><td>2026 约 15 亿美元 → 2027 近 20 亿</td></tr>
+      <tr><td>拉美</td><td>最快</td><td>头部 App 下载 +402%（2025）</td></tr>
+      <tr><td>印度</td><td>爆发</td><td>收入 3 亿美元+，下载 +278%</td></tr>
+      <tr><td>日本</td><td>高速</td><td>4,500 万 → 1.6 亿美元+（2024→2025）</td></tr>
+      <tr><td>欧洲</td><td>早期</td><td>视频时长占比约 4%，空间大</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<footer>来源：中国网络视听协会、艾媒咨询、DataEye、QuestMobile、Sensor Tower、Omdia、Media Partners Asia、Holywater / Owl &amp; Co、Variety、Reuters 等（2024–2026 年报道）。完整报告见《全球短剧市场调研》。</footer>
+</div>
